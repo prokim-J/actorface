@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+		
+		<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ffbfd3018b35991"></script>
+
+
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+		
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>나의 외모 배역 판별테스트</title>
+	</head>
+
+	<body>	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<div class="topnav">
+		 <a href="#home" class="active">배역 판별테스트</a>
+
+		<div id="myLinks">
+		<a href="https://animalface.site/">동물상 테스트</a>
+		</div>
+			
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<i class="fa fa-bars"></i>
+		</a>
+		</div>
+		
+		<script>
+			function myFunction() {
+ 			 var x = document.getElementById("myLinks");
+  			if (x.style.display === "block") {
+  			  x.style.display = "none";
+			 } else {
+  			  x.style.display = "block";
+  			}
+			}
+		</script>
+		<section class="section">
+			<h1 class="title">나의 외모 배역 판별테스트</h1>
+			<h4 class="subtitle1">인공지능이 판별해주는</h4>
+			<h4 class="subtitle2">나의 외모는 어떤 배역에 잘 어울릴까?</h4>
+			<h3 class="subtitle2">내 외모에 어울리는 배역이
+주연배우? 조연배우? 개그배우? 액션배우?</h3>
+			<h3 class="subtitle3">사용해 주셔서 감사합니다. - 제작자 ^_^</h3>
+		</section>
+		
+		<h3 class="pb-2 d-flex justify-content-center">성별을 선택하세요</h3>
+    <section class="d-flex justify-content-center">
+        <p class="d-flex align-items-center pr-3">여자</p>
+        <div>
+            <input type="checkbox" id="gender">
+            <label for="gender">
+                <span class="knob">
+                    <i></i>
+                </span>
+            </label>
+        </div>
+        <p class="d-flex align-items-center pl-3">남자</p>
+    </section>
+
+		<!-- 사진 업로드 시스템 -->
+		<script
+			class="jsbin"
+			src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"
+		></script>
+		<div class="container file-upload">
+			<div class="image-upload-wrap">
+				<input
+					class="file-upload-input"
+					type="file"
+					onchange="readURL(this);"
+					accept="image/*"
+				/>
+				<div class="drag-text">
+					<img src="img/pngwing2.png" class="mt-5 pt-5 upload" style="20%" />
+					<h3 class="mb-5 pb-5 pt-4 upload-text">얼굴 한번 봅시다</h3>
+				</div>
+			</div><div class="file-upload-content">
+            <img class="file-upload-image" id="face-image" src="#" alt="your image" />
+            <div id="loading" class="animated bounce">
+                <div class="spinner-border" role="status">
+                </div>
+                <p class="text-center">AI가 당신의 외모로 배역을 분석중입니다.</p>
+            </div>
+            <p class="result-message"></p>
+            <div id="label-container" class="d-flex flex-column justify-content-around"></div>
+            <div id="addThis" class="addthis_inline_share_toolbox_6lz1"></div>
+
+			    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                <div class="addthis_inline_share_toolbox_lclv"></div>
+			
+            <div class="pt-3 image-title-wrap">
+                <button type="button p-2" class="try-again-btn" onclick="window.location.reload();">
+                    <span class="try-again-text">다른 사진으로 재시도</span>
+				</button>          
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		<div id="webcam-container"></div>
+		<!-- Optional JavaScript; choose one of the two! -->
+		<!-- Option 1: Bootstrap Bundle with Popper -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+			crossorigin="anonymous"
+		></script>
+		<!-- Option 2: Separate Popper and Bootstrap JS -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+			integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+			integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+			crossorigin="anonymous"
+		></script>
+
+		<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+			
+		<script>
+			function readURL(input) {
+				if (input.files && input.files[0]) {
+					var reader = new FileReader();
+					reader.onload = function (e) {
+						$('.image-upload-wrap').hide();
+						$('.file-upload-image').attr('src', e.target.result);
+						$('.file-upload-content').show();
+						$('.image-title').html(input.files[0].name);
+					};
+					reader.readAsDataURL(input.files[0]);
+					init().then(function () {
+						console.log('hello');
+						predict();
+						$('#loading').hide();
+					});
+				} else {
+					removeUpload();
+				}
+			}
+			function removeUpload() {
+				$('.file-upload-input').replaceWith($('.file-upload-input').clone());
+				$('.file-upload-content').hide();
+				$('.image-upload-wrap').show();
+			}
+			$('.image-upload-wrap').bind('dragover', function () {
+				$('.image-upload-wrap').addClass('image-dropping');
+			});
+			$('.image-upload-wrap').bind('dragleave', function () {
+				$('.image-upload-wrap').removeClass('image-dropping');
+			});
+		
+		</script>
+		<script type="text/javascript">
+	
+			// More API functions here:
+			// https://github.com/googlecreativelab/te
+			// achablemachinecommunity/tree/master/libraries/image
+
+			// the link to your model provided by Teachable Machine export panel
+			const URL = "https://teachablemachine.withgoogle.com/models/lWBAA84c3/";
+
+			let model, webcam, labelContainer, maxPredictions;
+
+  			//내가 만든 파일 가져와서 저장해줌
+			async function init() {
+			const modelURL = URL + "model.json";
+			const metadataURL = URL + "metadata.json";
+				
+			// load the model and metadata
+			// Refer to tmImage.loadFromFiles() in the API to support files from a file picker
+			// or files from your local hard drive
+			// Note: the pose library adds "tmImage" object to your window (window.tmImage)
+			model = await tmImage.load(modelURL, metadataURL);
+			maxPredictions = model.getTotalClasses();
+			labelContainer = document.getElementById("label-container");
+			for (let i = 0; i < maxPredictions; i++) { // and class labels
+				labelContainer.appendChild(document.createElement("div"));
+			}
+		}
+		// run the webcam image through the image model
+		async function predict() {
+			// predict can take in an image, video or canvas html element
+			var image = document.getElementById("face-image");
+			const prediction = await model.predict(image, false);
+			prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
+			console.log(prediction[0].className);
+				var resultTitle, resultExplain, resultCeleb;
+			if (document.getElementById("gender").checked) {
+				switch(prediction[0].className) {
+					case "leadingmaleWonBin":
+						resultTitle = "남자주연배우상"
+						resultExplain = "당신은 매력적이고 뚜렷한 이목구비로 극중에서 주인공역을 맡아 연기하는 남자주연배우상입니다! "
+						 resultCeleb = "아주잘생긴 얼굴로 남자주연배우에서도 원빈 배우님과 많이 닮아있는 얼굴이군요!"
+						break;
+					case "leadingmaleSeoKangjoon":
+						resultTitle = "남자주연배우상"
+						resultExplain = "당신은 매력적이고 뚜렷한 이목구비로 극중에서 주인공역을 맡아 연기하는 남자주연배우상입니다!"
+						 resultCeleb = "아주잘생긴 얼굴로 남자주연배우에서도 서강준 배우님과 많이 닮아있는 얼굴이군요!"
+						break;
+					case "leadingmaleParkSeoJun":
+						resultTitle = "남자주연배우상"
+						resultExplain = "당신은 매력적이고 뚜렷한 이목구비로 극중에서 주인공역을 맡아 연기하는 남자주연배우상입니다!"
+						 resultCeleb = "아주잘생긴 얼굴로 남자주연배우에서도 박서준 배우님과 많이 닮아있는 얼굴이군요!"
+						break;
+					case "leadingmaleYooAhin":
+						resultTitle = "남자주연배우상"
+						resultExplain = "당신은 매력적이고 뚜렷한 이목구비로 극중에서 주인공역을 맡아 연기하는 남자주연배우상입니다!"
+						 resultCeleb = "아주잘생긴 얼굴로 남자주연배우에서도 유아인 배우님과 많이 닮아있는 얼굴이군요!"
+						break;
+					case "leadingmaleKangDongWon":
+						resultTitle = "남자주연배우상"
+						resultExplain = "당신은 매력적이고 뚜렷한 이목구비로 극중에서 주인공역을 맡아 연기하는 남자주연배우상입니다!"
+						resultCeleb = "아주잘생긴 얼굴로 남자주연배우에서도 강동원 배우님과 많이 닮아있는 얼굴이군요!"
+						break;
+						case "secondmaleKwakDoWon":
+						resultTitle = "남자조연배우상"
+						resultExplain = "당신은 연극이나 영화, 드라마에서 극을 더 풍성하게 만들고 독특한 개성, 카리스마 등으로 깨알같은 신스틸러의 주역으로 주연 못지 않게 주목을 받고 주인공을 빛내주는 역을 맡아 연기하는 남자조연배우상입니다! 남자조연배우에서도 곽도원 배우님과 많이 닮아있는 얼굴이군요!"
+						resultCeleb = " 평균이상의 예쁜얼굴로 여자주연배우에서도 한효주 배우님과 많이 닮아있는 얼굴이군요!"
+						break;
+						
+					case "secondmaleFivemonth":
+						resultTitle = "남자조연배우상"
+						resultExplain = "당신은 연극이나 영화, 드라마에서 극을 더 풍성하게 만들고 독특한 개성, 카리스마 등으로 깨알같은 신스틸러의 주역으로 주연 못지 않게 주목을 받고 주인공을 빛내주는 역을 맡아 연기하는 남자조연배우상입니다!"
+						resultCeleb = "남자조연배우에서도 오달수 배우님과 많이 닮아있는 얼굴이군요!"
+						break;
+					case "secondmaleYooHaejin":
+						resultTitle = "남자조연배우상"
+						resultExplain = "당신은 연극이나 영화, 드라마에서 극을 더 풍성하게 만들고 독특한 개성, 카리스마 등으로 깨알같은 신스틸러의 주역으로 주연 못지 않게 주목을 받고 주인공을 빛내주는 역을 맡아 연기하는 남자조연배우상입니다!"
+						resultCeleb = "남자조연배우에서도 유해진 배우님과 많이 닮아있는 얼굴이군요!"
+						break;
+					case "secondmaleLeeMoonSik":
+						resultTitle = "남자조연배우상"
+						resultExplain = "당신은 연극이나 영화, 드라마에서 극을 더 풍성하게 만들고 독특한 개성, 카리스마 등으로 깨알같은 신스틸러의 주역으로 주연 못지 않게 주목을 받고 주인공을 빛내주는 역을 맡아 연기하는 남자조연배우상입니다!"
+						resultCeleb = "남자조연배우에서도 이문식 배우님과 많이 닮아있는 얼굴이군요!"
+						break;
+					case "secondmaleLeeSeongmin":
+						resultTitle = "남자조연배우상"
+						resultExplain = "당신은 연극이나 영화, 드라마에서 극을 더 풍성하게 만들고 독특한 개성, 카리스마 등으로 깨알같은 신스틸러의 주역으로 주연 못지 않게 주목을 받고 주인공을 빛내주는 역을 맡아 연기하는 남자조연배우상입니다!"
+						resultCeleb = "남자조연배우에서도 이성민 배우님과 많이 닮아있는 얼굴이군요!"
+						break;
+						
+						default:
+						resultTitle = "알수없음 - 남자 여자 구분을 확실히 해주세요"
+						resultExplain = ""
+						
+					}
+          		  	} else {
+					switch (prediction[0].className) {
+							
+					case "leadingfemaleKimTaehee":
+						resultTitle = "여자주연배우상"
+						resultExplain = "당신은 매력적이고 뚜렷한 이목구비로 극중에서 주인공역을 맡아 연기하는 여자주연배우상입니다!"
+						resultCeleb = " 평균이상의 예쁜얼굴로 여자주연배우에서도 김태희 배우님과 많이 닮아있는 얼굴이군요!"
+						break;
+					case "leadingfemaleSongHyeKyo":
+						resultTitle = "여자주연배우상"
+						resultExplain = "당신은 매력적이고 뚜렷한 이목구비로 극중에서 주인공역을 맡아 연기하는 여자주연배우상입니다!"
+						resultCeleb = " 평균이상의 예쁜얼굴로 여자주연배우에서도 송혜교 배우님과 많이 닮아있는 얼굴이군요!"
+						break;
+					case "leadingfemaleShinSekyung":
+						resultTitle = "여자주연배우상"
+						resultExplain = "당신은 매력적이고 뚜렷한 이목구비로 극중에서 주인공역을 맡아 연기하는 여자주연배우상입니다!"
+						resultCeleb = " 평균이상의 예쁜얼굴로 여자주연배우에서도 신세경 배우님과 많이 닮아있는 얼굴이군요!"
+						break;
+					case "leadingfemaleJunjihyun":
+						resultTitle = "여자주연배우상"
+						resultExplain = "당신은 매력적이고 뚜렷한 이목구비로 극중에서 주인공역을 맡아 연기하는 여자주연배우상입니다!"
+						resultCeleb = " 평균이상의 예쁜얼굴로 여자주연배우에서도 전지현 배우님과 많이 닮아있는 얼굴이군요!"
+						break;
+					case "leadingfemaleHanHyojoo":
+						resultTitle = "여자주연배우상"
+						resultExplain = "당신은 매력적이고 뚜렷한 이목구비로 극중에서 주인공역을 맡아 연기하는 여자주연배우상입니다!"
+						resultCeleb = " 평균이상의 예쁜얼굴로 여자주연배우에서도 한효주 배우님과 많이 닮아있는 얼굴이군요!"
+						break;
+						
+					case "secondfemaleKimMiKyung":
+						resultTitle = "여자조연배우상"
+						resultExplain = "당신은 연극이나 영화, 드라마에서 극을 더 풍성하게 만들고 독특한 개성, 카리스마 등으로 깨알같은 신스틸러의 주역으로 주연 못지 않게 주목을 받고 주인공을 빛내주는 역을 맡아 연기하는 여자조연배우상입니다!"
+						resultCeleb = "여자조연배우에서도 김미경 배우님과 많이 닮아있는 얼굴이군요!"
+						break;
+					case "secondfemaleashipsship":
+						resultTitle = "여자조연배우상"
+						resultExplain = "당신은 연극이나 영화, 드라마에서 극을 더 풍성하게 만들고 독특한 개성, 카리스마 등으로 깨알같은 신스틸러의 주역으로 주연 못지 않게 주목을 받고 주인공을 빛내주는 역을 맡아 연기하는 여자조연배우상입니다!"
+						resultCeleb = "여자조연배우에서도 배해선 배우님과 많이 닮아있는 얼굴이군요!"
+						break;
+					case "secondfemaleLeeIlhwag":
+						resultTitle = "여자조연배우상"
+						resultExplain = "당신은 연극이나 영화, 드라마에서 극을 더 풍성하게 만들고 독특한 개성, 카리스마 등으로 깨알같은 신스틸러의 주역으로 주연 못지 않게 주목을 받고 주인공을 빛내주는 역을 맡아 연기하는 여자조연배우상입니다!"
+						resultCeleb = "여자조연배우에서도 이일화 배우님과 많이 닮아있는 얼굴이군요!"
+						break;
+					case "secondfemaleLeeJungeun":
+						resultTitle = "여자조연배우상"
+						resultExplain = "당신은 연극이나 영화, 드라마에서 극을 더 풍성하게 만들고 독특한 개성, 카리스마 등으로 깨알같은 신스틸러의 주역으로 주연 못지 않게 주목을 받고 주인공을 빛내주는 역을 맡아 연기하는 여자조연배우상입니다!"
+						resultCeleb = "여자조연배우에서도 이정은 배우님과 많이 닮아있는 얼굴이군요!"
+						break;
+					case "secondfemaleJangYoungNam":
+						resultTitle = "여자조연배우상"
+						resultExplain = "당신은 연극이나 영화, 드라마에서 극을 더 풍성하게 만들고 독특한 개성, 카리스마 등으로 깨알같은 신스틸러의 주역으로 주연 못지 않게 주목을 받고 주인공을 빛내주는 역을 맡아 연기하는 여자조연배우상입니다!"
+						resultCeleb = "여자조연배우에서도 장영남 배우님과 많이 닮아있는 얼굴이군요!"
+						break;			
+						
+					default:
+						resultTitle = "알수없음 - 남자 여자 구분을 확실히 해주세요"
+						resultExplain = ""
+					}
+				}
+				var title = "<div class='" + prediction[0].className + "-actors-title'>" + resultTitle + "</div>"
+			    var explain = "<div class='actor-explain pt-2'>" + resultExplain + "</div>"
+				var celeb = "<div class='" + prediction[0].className + "-actor-celeb pt-2 pb-2'>" + resultCeleb + "</div>"
+				$('.result-message').html(title + explain + celeb);
+				var barWidth;
+				let i = 0;
+				for (i; i < 5; i++) {
+					if (prediction[i].probability.toFixed(2) > 0.1) {
+                    barWidth = Math.round(prediction[i].probability.toFixed(2) * 100) + "%";
+                } else if (prediction[i].probability.toFixed(2) >= 0.01) {
+                    barWidth = "4%"
+                } else {
+                    barWidth = "2%"
+				}
+					
+					var labelTitle;
+                switch (prediction[i].className) {
+				// 남자 주연 배우
+                    case "leadingmaleWonBin":
+                        labelTitle = "남자주연배우상(원빈)"
+                        break;
+					case "leadingmaleSeoKangjoon":
+                        labelTitle = "남자주연배우상(서강준)"
+                        break;
+					case "leadingmaleParkSeoJun":
+                        labelTitle = "남자주연배우상(박서준)"
+                        break;
+					case "leadingmaleYooAhin":
+                        labelTitle = "남자주연배우상(유아인)"
+                        break;
+					case "leadingmaleKangDongWon":
+                        labelTitle = "남자주연배우상(강동원)"
+                        break;
+				// 남자 조연배우
+					case "secondmaleKwakDoWon":
+                        labelTitle = "남자조연배우상(곽도원)"
+                        break;
+					case "secondmaleFivemonth":
+                        labelTitle = "남자조연배우상(오달수)"
+                        break;
+					case "secondmaleYooHaejin":
+                        labelTitle = "남자조연배우상(유해진)"
+                        break;
+					case "secondmaleLeeMoonSik":
+                        labelTitle = "남자조연배우상(이문식)"
+                        break;
+					case "secondmaleLeeSeongmin":
+                        labelTitle = "남자조연배우상(이성민)"
+                        break;
+				// 여자 주연배우
+					case "leadingfemaleKimTaehee":
+                        labelTitle = "여자주연배우상(김태희)"
+                        break;
+					case "leadingfemaleSongHyeKyo":
+                        labelTitle = "여자주연배우상(송혜교)"
+                        break;
+					case "leadingfemaleShinSekyung":
+                        labelTitle = "여자주연배우상(신세경)"
+                        break;
+					case "leadingfemaleJunjihyun":
+                        labelTitle = "여자주연배우상(전지현)"
+                        break;
+					case "leadingfemaleHanHyojoo":
+                        labelTitle = "여자주연배우상(한효주)"
+                        break;
+				//여자 조연배우
+                    case "secondfemaleKimMiKyung":
+                        labelTitle = "여자조연배우상(김미경)"
+                        break;
+					case "secondfemaleashipsship":
+                        labelTitle = "여자조연배우상(배해선)"
+                        break;
+					case "secondfemaleLeeIlhwa":
+                        labelTitle = "여자조연배우상(이일화)"
+                        break;
+					case "secondfemaleLeeJungeun":
+                        labelTitle = "여자조연배우상(이정은)"
+                        break;
+					case "secondfemaleJangYoungNam":
+                        labelTitle = "여자조연배우상(장영남)"
+                        break;
+						
+                    default:
+                        labelTitle = "알수없음"
+                }
+                var label = "<div class='actor-label d-flex align-items-center'>" + labelTitle + "</div>"
+				 var bar = "<div class='bar-container position-relative container'><div class='" + prediction[i].className + "-box'></div><div class='d-flex justify-content-center align-items-center " + prediction[i].className + "-bar' style='width: " + barWidth + "'><span class='d-block percent-text'>" + Math.round(prediction[i].probability.toFixed(2) * 100) + " %</span></div></div>"
+                labelContainer.childNodes[i].innerHTML = label + bar;
+				}
+			}
+		
+			
+		</script>
+		<!-- 사진 업로드 시스템 끝 -->
+
+		<div class="face d-flex justify-content-center">
+			테스트 사용자의 사진은 어디에도 저장되지 않습니다.
+		</div>
+
+		<section class="youtube">
+			<div class="mt-5 youtube-cover d-flex justify-content-center">
+				<a href="https://www.youtube.com/channel/UCQNE2JmbasNYbjGAcuBiRRg" class="youtube-link">By 조코딩 유튜브 채널</a
+				><img src="img/youtube-copy.jpg" alt="" class="youtube-icon" />
+			</div>
+		</section>
+		<footer class="footer pt-5 container d-flex justify-content-center">
+        <div>
+            <p>&copy; KJS 2021. your-actor-face. </p>
+        </div>
+    </footer>
+	</body>
+	<!-- Copyright (c) 2021 by Aaron Vanston (https://codepen.io/aaronvanston/pen/yNYOXR)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ -->
+</html>

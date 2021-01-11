@@ -1,0 +1,816 @@
+body {
+  font-family: 'Jua', sans-serif;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  color: #000000;
+}
+
+.file-upload {
+  padding: 15% 3%;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: solid 1.5px #f6f7fa;
+    background-color: #f6f7fa;
+}
+
+
+.file-upload-btn:hover {
+  width: 100%;
+  margin: 0;
+  color: #fff;
+  background: #1FB264;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  border-bottom: 4px solid #15824B;
+  transition: all .2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.file-upload-btn:active {
+  border: 0;
+  transition: all .2s ease;
+}
+
+.file-upload-content {
+  display: none;
+  text-align: center;
+}
+
+.file-upload-input {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.image-upload-wrap {
+  width: 65%;
+  position: relative;
+  object-fit: contain;
+  border-radius: 10px;
+  border: dashed 1.5px #35465d;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+
+.image-dropping,
+.image-upload-wrap:hover {
+  background-color: #000000;
+  border: 1.5px dashed #ffffff;
+}
+
+.image-title-wrap {
+  padding: 0 15px 15px 15px;
+  color: #222;
+}
+
+.drag-text {
+  text-align: center;
+}
+
+.drag-text h2 {	
+  font-family: 'Jua', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.53;
+  text-align: center;
+  color: #000000;
+  margin: 0 auto;
+}
+
+.file-upload-image {
+  max-height: 200px;
+  max-width: 200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.remove-image {
+  width: 200px;
+  margin: 0;
+  color: #fff;
+  background: #cd4535;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  border-bottom: 4px solid #b02818;
+  transition: all .2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.remove-image:hover {
+  background: #c13b2a;
+  color: #ffffff;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.remove-image:active {
+  border: 0;
+  transition: all .2s ease;
+}
+
+/* 탐색 메뉴 스타일 지정 */
+.topnav {
+  overflow: hidden;
+  background-color: #ffffff;
+  position: relative;
+}
+
+/* 탐색 메뉴 내부의 링크 숨기기(로고/홈 제외)*/
+.topnav #myLinks {
+  display: none;
+}
+
+/* 스타일 탐색 메뉴 링크 */
+.topnav a {
+  color: #000000;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: block;
+}
+
+/* 햄버거 메뉴를 스타일링하세요*/
+.topnav a.icon {
+  background: #ffffff;
+  display: block;
+  position: absolute;
+  color: #999999;
+  right: 0;
+  top: 0;
+}
+
+.section{
+	margin-top: 100px;
+}
+
+.title{
+  font-family: 'Jua', sans-serif;
+  font-size: 2rem;
+  line-height: 1.67;
+  text-align: center;
+  color: #000000;
+}
+
+.subtitle1{
+  font-family: 'Jua', sans-serif;
+  line-height: 1.53;
+  text-align: center;
+  color: #000000;
+}
+
+.subtitle2{
+ font-family: 'Jua', sans-serif;
+  line-height: 1.53;
+  text-align: center;
+  color: #000000;
+}
+.subtitle3{
+ font-family: 'Jua', sans-serif;
+  line-height: 1.53;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 15px;
+	}
+}
+
+.youtube-link{
+  font-family: NanumSquareR;
+  font-size: 1.5rem;
+  line-height: 1.71;
+  text-align: center;
+  color: #f73737;
+}
+
+.youtube-icon{
+	width: 8%;
+}
+
+.footer {
+    background-color: initial;
+    color: initial;
+}
+
+.bar-container {
+  height: 2.7rem;
+}
+
+/*-------------------------------------남자------------------------------*/
+.leadingmaleWonBin-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(27, 175, 234, 0.2);
+}
+.leadingmaleWonBin-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(27, 175, 234, 1);
+}
+.leadingmaleSeoKangjoon-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(27, 175, 234, 0.2);
+}
+.leadingmaleSeoKangjoon-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(27, 175, 234, 1);
+}
+
+.leadingmaleParkSeoJun-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(27, 175, 234, 0.2);
+}
+.leadingmaleParkSeoJun-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(27, 175, 234, 1);
+}
+.leadingmaleYooAhin-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(27, 175, 234, 0.2);
+}
+.leadingmaleYooAhin-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(27, 175, 234, 1);
+}
+.leadingmaleKangDongWon-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(27, 175, 234, 0.2);
+}
+.leadingmaleKangDongWon-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(27, 175, 234, 1);
+}
+
+.secondmaleKwakDoWon-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(27, 175, 234, 0.2);
+}
+.secondmaleKwakDoWon-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(27, 175, 234, 1);
+}
+.secondmaleFivemonth-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(27, 175, 234, 0.2);
+}
+.secondmaleFivemonth-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(27, 175, 234, 1);
+}
+.secondmaleYooHaejin-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(27, 175, 234, 0.2);
+}
+.secondmaleYooHaejin-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(27, 175, 234, 1);
+}
+.secondmaleLeeMoonSik-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(27, 175, 234, 0.2);
+}
+.secondmaleLeeMoonSik-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(27, 175, 234, 1);
+}
+.secondmaleLeeSeongmin-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(27, 175, 234, 0.2);
+}
+.secondmaleLeeSeongmin-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(27, 175, 234, 1);
+}
+/*-------------------------------------여자---------------------------*/
+.leadingfemaleKimTaehee-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(235, 166, 190, 0.2);
+}
+.leadingfemaleKimTaehee-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(235, 166, 190, 1);
+}
+.leadingfemaleSongHyeKyo-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(235, 166, 190, 0.2);
+}
+.leadingfemaleSongHyeKyo-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(235, 166, 190, 1);
+}
+.leadingfemaleShinSekyung-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(235, 166, 190, 0.2);
+}
+.leadingfemaleShinSekyung-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(235, 166, 190, 1);
+}
+.leadingfemaleJunjihyun-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(235, 166, 190, 0.2);
+}
+.leadingfemaleJunjihyun-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(235, 166, 190, 1);
+}
+.leadingfemaleHanHyojoo-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(235, 166, 190, 0.2);
+}
+.leadingfemaleHanHyojoo-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(235, 166, 190, 1);
+}
+
+.secondfemaleKimMiKyung-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(235, 166, 190, 0.2);
+}
+.secondfemaleKimMiKyung-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(235, 166, 190, 1);
+}
+.secondfemaleashipsship-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(235, 166, 190, 0.2);
+}
+.secondfemaleashipsship-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(235, 166, 190, 1);
+}
+.secondfemaleLeeIlhwa-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(235, 166, 190, 0.2);
+}
+.secondfemaleLeeIlhwa-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(235, 166, 190, 1);
+}
+.secondfemaleLeeJungeun-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(235, 166, 190, 0.2);
+}
+.secondfemaleLeeJungeun-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(235, 166, 190, 1);
+}
+.secondfemaleJangYoungNam-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(235, 166, 190, 0.2);
+}
+.secondfemaleJangYoungNam-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(235, 166, 190, 1);
+}
+
+.percent-text {
+  font-size: 0.9rem;
+  color: #000000;
+}
+
+.actor-label {
+    height: 2rem;
+}
+#label-container {
+    width: 80%;
+    margin: 0 auto;
+}
+.result-message {
+    font-size: 1.5rem;
+}
+/* 여자 */
+.leadingfemaleKimTaehee-actors-title {
+    color: #e56995;
+	font-size: 1.5rem;
+}
+.leadingfemaleKimTaehee-actor-celeb {
+    color: #e56995;
+    font-size: 1.5rem;
+}
+.leadingfemaleSongHyeKyo-actors-title {
+    color: #e56995;
+	font-size: 1.5rem;
+}
+.leadingfemaleSongHyeKyo-actor-celeb {
+    color: #e56995;
+    font-size: 1.5rem;
+}
+.leadingfemaleShinSekyung-actors-title {
+    color: #e56995;
+	font-size: 1.5rem;
+}
+.leadingfemaleShinSekyung-actor-celeb {
+    color: #e56995;
+    font-size: 1.5rem;
+}
+.leadingfemaleJunjihyun-actors-title {
+    color: #e56995;
+	font-size: 1.5rem;
+}
+.leadingfemaleJunjihyun-actor-celeb {
+    color: #e56995;
+    font-size: 1.5rem;
+}
+.leadingfemaleHanHyojoo-actors-title {
+    color: #e56995;
+	font-size: 1.5rem;
+}
+.leadingfemaleHanHyojoo-actor-celeb {
+    color: #e56995;
+    font-size: 1.5rem;
+}
+
+.secondfemaleKimMiKyung-actors-title {
+    color: #e56995;
+	font-size: 1.5rem;
+}
+.secondfemaleKimMiKyung-actor-celeb {
+    color: #e56995;
+    font-size: 1.5rem;
+}
+.secondfemaleashipsship-actors-title {
+    color: #e56995;
+	font-size: 1.5rem;
+}
+.secondfemaleashipsship-actor-celeb {
+    color: #e56995;
+    font-size: 1.5rem;
+}
+.secondfemaleLeeIlhwa-actors-title {
+    color: #e56995;
+	font-size: 1.5rem;
+}
+.secondfemaleLeeIlhwa-actor-celeb {
+    color: #e56995;
+    font-size: 1.5rem;
+}
+.secondfemaleLeeJungeun-actors-title {
+    color: #e56995;
+	font-size: 1.5rem;
+}
+.secondfemaleLeeJungeun-actor-celeb {
+    color: #e56995;
+    font-size: 1.5rem;
+}
+.secondfemaleJangYoungNam-actors-title {
+    color: #e56995;
+	font-size: 1.5rem;
+}
+.secondfemaleJangYoungNam-actor-celeb {
+    color: #e56995;
+    font-size: 1.5rem;
+}
+/* 남자 */
+
+.leadingmaleWonBin-actors-title {
+    color: #00ccff;
+	font-size: 1.5rem;
+}
+.leadingmaleWonBin-actor-celeb {
+    color: #00ccff;
+    font-size: 1.5rem;
+}
+.leadingmaleSeoKangjoon-actors-title {
+    color: #00ccff;
+	font-size: 1.5rem;
+}
+.leadingmaleSeoKangjoon-actor-celeb {
+    color: #00ccff;
+    font-size: 1.5rem;
+}
+.leadingmaleParkSeoJun-actors-title {
+    color: #00ccff;
+	font-size: 1.5rem;
+}
+.leadingmaleParkSeoJun-actor-celeb {
+    color: #00ccff;
+    font-size: 1.5rem;
+}
+.leadingmaleYooAhin-actors-title {
+    color: #00ccff;
+	font-size: 1.5rem;
+}
+.leadingmaleYooAhin-actor-celeb {
+    color: #00ccff;
+    font-size: 1.5rem;
+}
+.leadingmaleKangDongWon-actors-title {
+    color: #00ccff;
+	font-size: 1.5rem;
+}
+.leadingmaleKangDongWon-actor-celeb {
+    color: #00ccff;
+    font-size: 1.5rem;
+}
+
+.secondmaleKwakDoWon-actors-title {
+    color: #00ccff;
+	font-size: 1.5rem;
+}
+.secondmaleKwakDoWon-actor-celeb {
+    color: #00ccff;
+    font-size: 1.5rem;
+}
+.secondmaleFivemonth-actors-title {
+    color: #00ccff;
+	font-size: 1.5rem;
+}
+.lsecondmaleFivemonth-actor-celeb {
+    color: #00ccff;
+    font-size: 1.5rem;
+}
+.secondmaleYooHaejin-actors-title {
+    color: #00ccff;
+	font-size: 1.5rem;
+}
+.secondmaleYooHaejin-actor-celeb {
+    color: #00ccff;
+    font-size: 1.5rem;
+}
+.secondmaleLeeMoonSik-actors-title {
+    color: #00ccff;
+	font-size: 1.5rem;
+}
+.secondmaleLeeMoonSik-actor-celeb {
+    color: #00ccff;
+    font-size: 1.5rem;
+}
+.secondmaleLeeSeongmin-actors-title {
+    color: #00ccff;
+	font-size: 1.5rem;
+}
+.secondmaleLeeSeongmin-actor-celeb {
+    color: #00ccff;
+    font-size: 1.5rem;
+}
+
+input#gender {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+  display: inline-block;
+  width: 90px;
+  height: 41px;
+  box-shadow: 0 0 0 8px #e5e9ea inset;
+  border-radius: 30px;
+  position: relative;
+}
+
+.knob {
+  position: absolute;
+  width: 41px;
+  top: 0;
+  left: 0;
+  height: 41px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 8px #f470a7 inset;
+  background-color: #fbd4e6;
+  transition: 0.3s;
+}
+.knob > i {
+  position: absolute;
+  width: 4px;
+  height: 18px;
+  top: 100%;
+  background-color: #f470a7;
+  left: calc(50% - 2px);
+}
+
+.knob > i:before,
+.knob > i:after {
+  width: 6px;
+  position: absolute;
+  top: 42%;
+  content: "";
+  height: 4px;
+  background-color: #f470a7;
+}
+
+.knob > i:before {
+  left: 4px;
+}
+.knob > i:after {
+  left: -6px;
+}
+
+input:checked + label > .knob {
+  box-shadow: 0 0 0 8px #a1c6dd inset;
+  background-color: #e2ecf4;
+  transform: translateX(49px) rotate(-140deg);
+}
+
+input:checked + label > .knob > i {
+  background-color: #a1c6dd;
+}
+
+input:checked + label > .knob > i:after,
+input:checked + label > .knob > i:before {
+  background-color: #a1c6dd;
+}
+
+input:checked + label > .knob > i:after {
+  top: 14.5px;
+  width: 12px;
+  left: -7px;
+  transform: rotate(45deg);
+}
+input:checked + label > .knob > i:before {
+  top: 13px;
+  width: 12px;
+  left: 0px;
+  transform: rotate(134deg);
+}
