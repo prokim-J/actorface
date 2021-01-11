@@ -1,0 +1,3 @@
+User-agent: *
+Allow:/
+Sitemap: https://actorface.netlify.app/sitemap.xml
