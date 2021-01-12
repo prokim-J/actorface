@@ -466,6 +466,91 @@ body {
 	border-radius: 10px;
 	background-color: rgba(27, 175, 234, 1);
 }
+.secondmaleJungMansik-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgba(27, 175, 234, 0.2);
+}
+.secondmaleJungMansik-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: rgba(27, 175, 234, 1);
+}
+.secondmaleKimSangHo-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgba(27, 175, 234, 0.2);
+}
+.secondmaleKimSangHo-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: rgba(27, 175, 234, 1);
+}
+.secondmaleBaeSungWoo-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgba(27, 175, 234, 0.2);
+}
+.secondmaleBaeSungWoo-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: rgba(27, 175, 234, 1);
+}
+.secondmaleOhJungse-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgba(27, 175, 234, 0.2);
+}
+.secondmaleOhJungse-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: rgba(27, 175, 234, 1);
+}
+.secondmaleParkChulMin-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgba(27, 175, 234, 0.2);
+}
+.secondmaleParkChulMin-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: rgba(27, 175, 234, 1);
+}
 /*-------------------------------------여자---------------------------*/
 .leadingfemaleKimTaehee-box {
 	position: absolute;
@@ -982,6 +1067,47 @@ body {
 	font-size: 1.5rem;
 }
 
+.secondmaleJungMansik-actors-title {
+	color: #00ccff;
+	font-size: 1.5rem;
+}
+.secondmaleJungMansik-actor-celeb {
+	color: #00ccff;
+	font-size: 1.5rem;
+}
+.secondmaleKimSangHo-actors-title {
+	color: #00ccff;
+	font-size: 1.5rem;
+}
+.secondmaleKimSangHo-actor-celeb {
+	color: #00ccff;
+	font-size: 1.5rem;
+}
+.secondmaleBaeSungWoo-actors-title {
+	color: #00ccff;
+	font-size: 1.5rem;
+}
+.secondmaleBaeSungWoo-actor-celeb {
+	color: #00ccff;
+	font-size: 1.5rem;
+}
+.secondmaleOhJungse-actors-title {
+	color: #00ccff;
+	font-size: 1.5rem;
+}
+.secondmaleOhJungse-actor-celeb {
+	color: #00ccff;
+	font-size: 1.5rem;
+}
+.secondmaleParkChulMin-actors-title {
+	color: #00ccff;
+	font-size: 1.5rem;
+}
+.secondmaleParkChulMin-actor-celeb {
+	color: #00ccff;
+	font-size: 1.5rem;
+}
+
 input#gender {
 	display: none;
 }
@@ -1059,4 +1185,12 @@ input:checked + label > .knob > i:before {
 	width: 12px;
 	left: 0px;
 	transform: rotate(134deg);
+}
+.ad-banner{
+	width: 320px;
+	margin: 0 auto;
+}
+.ad-banner2{
+	width: 320px;
+	margin: 0 auto;
 }
