@@ -70,6 +70,7 @@
 				}
 			}
 		</script>
+
 		<section class="section">
 			<h1 class="title">나의 외모 배역 테스트</h1>
 			<h4 class="subtitle1">인공지능이 판별해주는</h4>
@@ -156,7 +157,7 @@
 			integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
 			crossorigin="anonymous"
 		></script>
-
+	<!-- Teachable 업데이트 공간 -->
 		<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
 
@@ -291,29 +292,25 @@
 							resultTitle = '남자주연배우상';
 							resultExplain =
 								'당신은 매력적이고 뚜렷한 이목구비로 극중에서 주인공역을 맡아 연기하는 남자주연배우상입니다!';
-							resultCeleb =
-								'아주잘생긴 얼굴로 남자주연배우에서도 지창욱 배우님과 많이 닮아있는 얼굴이군요!';
+							resultCeleb ='아주잘생긴 얼굴로 남자주연배우에서도 지창욱 배우님과 많이 닮아있는 얼굴이군요!';
 							break;
 						case 'leadingmaleHyunBin':
 							resultTitle = '남자주연배우상';
 							resultExplain =
 								'당신은 매력적이고 뚜렷한 이목구비로 극중에서 주인공역을 맡아 연기하는 남자주연배우상입니다!';
-							resultCeleb =
-								'아주잘생긴 얼굴로 남자주연배우에서도 현빈 배우님과 많이 닮아있는 얼굴이군요!';
+							resultCeleb ='아주잘생긴 얼굴로 남자주연배우에서도 현빈 배우님과 많이 닮아있는 얼굴이군요!';
 							break;
 							
 						case 'secondmaleKwakDoWon':
 							resultTitle = '남자조연배우상';
 							resultExplain =
 								'당신은 연극이나 영화, 드라마에서 극을 더 풍성하게 만들고 독특한 개성, 카리스마 등으로 깨알같은 신스틸러의 주역으로 주연 못지 않게 주목을 받고 주인공을 빛내주는 역을 맡아 연기하는 남자조연배우상입니다! 남자조연배우에서도 곽도원 배우님과 많이 닮아있는 얼굴이군요!';
-							resultCeleb =
-								' 평균이상의 예쁜얼굴로 여자주연배우에서도 한효주 배우님과 많이 닮아있는 얼굴이군요!';
+							resultCeleb =' 평균이상의 예쁜얼굴로 여자주연배우에서도 한효주 배우님과 많이 닮아있는 얼굴이군요!';
 							break;
 
 						case 'secondmaleFivemonth':
 							resultTitle = '남자조연배우상';
-							resultExplain =
-								'당신은 연극이나 영화, 드라마에서 극을 더 풍성하게 만들고 독특한 개성, 카리스마 등으로 깨알같은 신스틸러의 주역으로 주연 못지 않게 주목을 받고 주인공을 빛내주는 역을 맡아 연기하는 남자조연배우상입니다!';
+							resultExplain ='당신은 연극이나 영화, 드라마에서 극을 더 풍성하게 만들고 독특한 개성, 카리스마 등으로 깨알같은 신스틸러의 주역으로 주연 못지 않게 주목을 받고 주인공을 빛내주는 역을 맡아 연기하는 남자조연배우상입니다!';
 							resultCeleb =
 								'남자조연배우에서도 오달수 배우님과 많이 닮아있는 얼굴이군요!';
 							break;
@@ -321,22 +318,49 @@
 							resultTitle = '남자조연배우상';
 							resultExplain =
 								'당신은 연극이나 영화, 드라마에서 극을 더 풍성하게 만들고 독특한 개성, 카리스마 등으로 깨알같은 신스틸러의 주역으로 주연 못지 않게 주목을 받고 주인공을 빛내주는 역을 맡아 연기하는 남자조연배우상입니다!';
-							resultCeleb =
-								'남자조연배우에서도 유해진 배우님과 많이 닮아있는 얼굴이군요!';
+							resultCeleb ='남자조연배우에서도 유해진 배우님과 많이 닮아있는 얼굴이군요!';
 							break;
 						case 'secondmaleLeeMoonSik':
 							resultTitle = '남자조연배우상';
 							resultExplain =
 								'당신은 연극이나 영화, 드라마에서 극을 더 풍성하게 만들고 독특한 개성, 카리스마 등으로 깨알같은 신스틸러의 주역으로 주연 못지 않게 주목을 받고 주인공을 빛내주는 역을 맡아 연기하는 남자조연배우상입니다!';
-							resultCeleb =
-								'남자조연배우에서도 이문식 배우님과 많이 닮아있는 얼굴이군요!';
+							resultCeleb = '남자조연배우에서도 이문식 배우님과 많이 닮아있는 얼굴이군요!';
 							break;
 						case 'secondmaleLeeSeongmin':
 							resultTitle = '남자조연배우상';
 							resultExplain =
 								'당신은 연극이나 영화, 드라마에서 극을 더 풍성하게 만들고 독특한 개성, 카리스마 등으로 깨알같은 신스틸러의 주역으로 주연 못지 않게 주목을 받고 주인공을 빛내주는 역을 맡아 연기하는 남자조연배우상입니다!';
-							resultCeleb =
-								'남자조연배우에서도 이성민 배우님과 많이 닮아있는 얼굴이군요!';
+							resultCeleb = '남자조연배우에서도 이성민 배우님과 많이 닮아있는 얼굴이군요!';
+							break;
+							case 'secondmaleJungMansik':
+							resultTitle = '남자조연배우상';
+							resultExplain =
+								'당신은 연극이나 영화, 드라마에서 극을 더 풍성하게 만들고 독특한 개성, 카리스마 등으로 깨알같은 신스틸러의 주역으로 주연 못지 않게 주목을 받고 주인공을 빛내주는 역을 맡아 연기하는 남자조연배우상입니다!';
+							resultCeleb = '남자조연배우에서도 정만식 배우님과 많이 닮아있는 얼굴이군요!';
+							break;
+							case 'secondmaleKimSangHo':
+							resultTitle = '남자조연배우상';
+							resultExplain =
+								'당신은 연극이나 영화, 드라마에서 극을 더 풍성하게 만들고 독특한 개성, 카리스마 등으로 깨알같은 신스틸러의 주역으로 주연 못지 않게 주목을 받고 주인공을 빛내주는 역을 맡아 연기하는 남자조연배우상입니다!';
+							resultCeleb = '남자조연배우에서도 김상호 배우님과 많이 닮아있는 얼굴이군요!';
+							break;
+							case 'secondmaleBaeSungWoo':
+							resultTitle = '남자조연배우상';
+							resultExplain =
+								'당신은 연극이나 영화, 드라마에서 극을 더 풍성하게 만들고 독특한 개성, 카리스마 등으로 깨알같은 신스틸러의 주역으로 주연 못지 않게 주목을 받고 주인공을 빛내주는 역을 맡아 연기하는 남자조연배우상입니다!';
+							resultCeleb = '남자조연배우에서도 배성우 배우님과 많이 닮아있는 얼굴이군요!';
+							break;
+							case 'secondmaleOhJungse':
+							resultTitle = '남자조연배우상';
+							resultExplain =
+								'당신은 연극이나 영화, 드라마에서 극을 더 풍성하게 만들고 독특한 개성, 카리스마 등으로 깨알같은 신스틸러의 주역으로 주연 못지 않게 주목을 받고 주인공을 빛내주는 역을 맡아 연기하는 남자조연배우상입니다!';
+							resultCeleb = '남자조연배우에서도 오정세 배우님과 많이 닮아있는 얼굴이군요!';
+							break;
+							case 'secondmaleParkChulMin':
+							resultTitle = '남자조연배우상';
+							resultExplain =
+								'당신은 연극이나 영화, 드라마에서 극을 더 풍성하게 만들고 독특한 개성, 카리스마 등으로 깨알같은 신스틸러의 주역으로 주연 못지 않게 주목을 받고 주인공을 빛내주는 역을 맡아 연기하는 남자조연배우상입니다!';
+							resultCeleb = '남자조연배우에서도 박철민 배우님과 많이 닮아있는 얼굴이군요!';
 							break;
 
 						default:
@@ -531,6 +555,21 @@
 						case 'secondmaleLeeSeongmin':
 							labelTitle = '남자조연배우상(이성민)';
 							break;
+						case 'secondmaleJungMansik':
+							labelTitle = '남자조연배우상(정만식)';
+							break;
+						case 'secondmaleKimSangHo':
+							labelTitle = '남자조연배우상(김상호)';
+							break;
+						case 'secondmaleBaeSungWoo':
+							labelTitle = '남자조연배우상(배성우)';
+							break;
+						case 'secondmaleOhJungse':
+							labelTitle = '남자조연배우상(오정세)';
+							break;
+						case 'secondmaleParkChulMin':
+							labelTitle = '남자조연배우상(박철민)';
+							break;
 						// 여자 주연배우
 						case 'leadingfemaleKimTaehee':
 							labelTitle = '여자주연배우상(김태희)';
@@ -605,7 +644,7 @@
 		<div class="face d-flex justify-content-center">
 			테스트 사용자의 사진은 어디에도 저장되지 않습니다.
 		</div>
-
+		
 		<section class="youtube">
 			<div class="mt-5 youtube-cover d-flex justify-content-center">
 				<a
@@ -614,11 +653,29 @@
 					>By 조코딩 유튜브 채널</a
 				><img src="img/youtube-copy.jpg" alt="" class="youtube-icon" />
 			</div>
+			
 		</section>
+		<div class="ad-banner">
+		<ins class="kakao_ad_area" style="display:none;" 
+		 data-ad-unit    = "DAN-FBL6s0R83Du5kIle" 
+		 data-ad-width   = "320" 
+		 data-ad-height  = "100"></ins> 
+		<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+		</div>
+		
+		<div class="ad-banner2">
+		<ins class="kakao_ad_area" style="display:none;" 
+ data-ad-unit    = "DAN-TzErOi7dwL3muou8" 
+ data-ad-width   = "320" 
+ data-ad-height  = "100"></ins> 
+<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+		</div>
+			
 		<footer class="footer pt-5 container d-flex justify-content-center">
 			<div>
 				<p>&copy; KJS 2021. your-actor-face.</p>
 			</div>
+			
 		</footer>
 	</body>
 	<!-- Copyright (c) 2021 by Aaron Vanston (https://codepen.io/aaronvanston/pen/yNYOXR)
