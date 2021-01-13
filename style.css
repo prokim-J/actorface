@@ -808,6 +808,92 @@ body {
 	background-color: rgba(235, 166, 190, 1);
 }
 
+.secondfemaleKimSunYoung-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgba(235, 166, 190, 0.2);
+}
+.secondfemaleKimSunYoung-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: rgba(235, 166, 190, 1);
+}
+.secondfemaleYeomHyeran-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgba(235, 166, 190, 0.2);
+}
+.secondfemaleYeomHyeran-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: rgba(235, 166, 190, 1);
+}
+.secondfemaleRaMiran-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgba(235, 166, 190, 0.2);
+}
+.secondfemaleRaMiran-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: rgba(235, 166, 190, 1);
+}
+.secondfemaleKimHaeSook-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgba(235, 166, 190, 0.2);
+}
+.secondfemaleKimHaeSook-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: rgba(235, 166, 190, 1);
+}
+.secondfemaletruecircumstances-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgba(235, 166, 190, 0.2);
+}
+.secondfemaletruecircumstances-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: rgba(235, 166, 190, 1);
+}
+
 .percent-text {
 	font-size: 0.9rem;
 	color: #000000;
@@ -941,6 +1027,47 @@ body {
 	font-size: 1.5rem;
 }
 .secondfemaleJangYoungNam-actor-celeb {
+	color: #e56995;
+	font-size: 1.5rem;
+}
+
+.secondfemaleKimSunYoung-actors-title {
+	color: #e56995;
+	font-size: 1.5rem;
+}
+.secondfemaleKimSunYoung-actor-celeb {
+	color: #e56995;
+	font-size: 1.5rem;
+}
+.secondfemaleYeomHyeran-actors-title {
+	color: #e56995;
+	font-size: 1.5rem;
+}
+.secondfemaleYeomHyeran-actor-celeb {
+	color: #e56995;
+	font-size: 1.5rem;
+}
+.secondfemaleRaMiran-actors-title {
+	color: #e56995;
+	font-size: 1.5rem;
+}
+.secondfemaleRaMiran-actor-celeb {
+	color: #e56995;
+	font-size: 1.5rem;
+}
+.secondfemaleKimHaeSook-actors-title {
+	color: #e56995;
+	font-size: 1.5rem;
+}
+.secondfemaleKimHaeSook-actor-celeb {
+	color: #e56995;
+	font-size: 1.5rem;
+}
+.secondfemaletruecircumstances-actors-title {
+	color: #e56995;
+	font-size: 1.5rem;
+}
+.secondfemaletruecircumstances-actor-celeb {
 	color: #e56995;
 	font-size: 1.5rem;
 }
