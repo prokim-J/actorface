@@ -381,6 +381,23 @@ body {
 	border-radius: 10px;
 	background-color: rgba(27, 175, 234, 1);
 }
+.leadingmaleMaDongSeok-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgba(27, 175, 234, 0.2);
+}
+.leadingmaleMaDongSeok-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: rgba(27, 175, 234, 1);
+}
 .secondmaleKwakDoWon-box {
 	position: absolute;
 	top: 0;
@@ -1153,6 +1170,14 @@ body {
 	color: #00ccff;
 	font-size: 1.5rem;
 }
+.leadingmaleMaDongSeok-actors-title {
+	color: #00ccff;
+	font-size: 1.5rem;
+}
+.leadingmaleMaDongSeok-actor-celeb {
+	color: #00ccff;
+	font-size: 1.5rem;
+}
 .secondmaleKwakDoWon-actors-title {
 	color: #00ccff;
 	font-size: 1.5rem;
@@ -1165,7 +1190,7 @@ body {
 	color: #00ccff;
 	font-size: 1.5rem;
 }
-.lsecondmaleFivemonth-actor-celeb {
+.secondmaleFivemonth-actor-celeb {
 	color: #00ccff;
 	font-size: 1.5rem;
 }
