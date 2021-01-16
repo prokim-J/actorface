@@ -568,6 +568,91 @@ body {
 	border-radius: 10px;
 	background-color: rgba(27, 175, 234, 1);
 }
+.secondmaleJeonNoMin-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgba(27, 175, 234, 0.2);
+}
+.secondmaleJeonNoMin-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: rgba(27, 175, 234, 1);
+}
+.secondmaleJungWoongin-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgba(27, 175, 234, 0.2);
+}
+.secondmaleJungWoongin-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: rgba(27, 175, 234, 1);
+}
+.secondmaleLeeSeungHyo-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgba(27, 175, 234, 0.2);
+}
+.secondmaleLeeSeungHyo-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: rgba(27, 175, 234, 1);
+}
+.secondmaleEomHyoseop-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgba(27, 175, 234, 0.2);
+}
+.secondmaleEomHyoseop-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: rgba(27, 175, 234, 1);
+}
+.secondmaleJungHobin-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgba(27, 175, 234, 0.2);
+}
+.secondmaleJungHobin-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: rgba(27, 175, 234, 1);
+}
 /*-------------------------------------여자---------------------------*/
 .leadingfemaleKimTaehee-box {
 	position: absolute;
@@ -1256,6 +1341,47 @@ body {
 	font-size: 1.5rem;
 }
 .secondmaleParkChulMin-actor-celeb {
+	color: #00ccff;
+	font-size: 1.5rem;
+}
+
+.secondmaleJeonNoMin-actors-title {
+	color: #00ccff;
+	font-size: 1.5rem;
+}
+.secondmaleJeonNoMin-actor-celeb {
+	color: #00ccff;
+	font-size: 1.5rem;
+}
+.secondmaleJungWoongin-actors-title {
+	color: #00ccff;
+	font-size: 1.5rem;
+}
+.secondmaleJungWoongin-actor-celeb {
+	color: #00ccff;
+	font-size: 1.5rem;
+}
+.secondmaleLeeSeungHyo-actors-title {
+	color: #00ccff;
+	font-size: 1.5rem;
+}
+.secondmaleLeeSeungHyo-actor-celeb {
+	color: #00ccff;
+	font-size: 1.5rem;
+}
+.secondmaleEomHyoseop-actors-title {
+	color: #00ccff;
+	font-size: 1.5rem;
+}
+.secondmaleEomHyoseop-actor-celeb {
+	color: #00ccff;
+	font-size: 1.5rem;
+}
+.secondmaleJungHobin-actors-title {
+	color: #00ccff;
+	font-size: 1.5rem;
+}
+.secondmaleJungHobin-actor-celeb {
 	color: #00ccff;
 	font-size: 1.5rem;
 }
