@@ -179,6 +179,12 @@ body {
 	text-align: center;
 	color: #ffffff;
 }
+.subtitle4 {
+	font-family: 'Jua', sans-serif;
+	line-height: 1.53;
+	text-align: center;
+	color: blue;
+}
 
 /* On screens that are 600px or less, set the background color to olive */
 @media screen and (max-width: 600px) {
